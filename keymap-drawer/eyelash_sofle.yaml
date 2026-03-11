@@ -27,7 +27,7 @@ layers:
   - O
   - P
   - {t: '[', s: '{'}
-  - $$mdi:apple-keyboard-control$$
+  - $$mdi:apple-keyboard-caps$$
   - A
   - S
   - D
@@ -51,19 +51,19 @@ layers:
   - M
   - {t: ',', h: <, s: <}
   - {t: ., h: '>', s: '>'}
-  - {t: /, h: \, s: '?'}
+  - {t: /, s: '?'}
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - $$mdi:volume-off$$
   - $$mdi:apple-keyboard-option$$
-  - $$mdi:apple-keyboard-caps$$
-  - {t: ',', s: <}
-  - {t: ., s: '>'}
+  - $$mdi:apple-keyboard-control$$
+  - KP COMMA
+  - KP DOT
   - $$mdi:keyboard-space$$
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - $$mdi:keyboard-space$$
-  - {t: /, s: '?'}
+  - RIGHT GUI
   - {t: layer1, h: toggle}
-  - LGUI
+  - {h: '$$mdi:arrow-down-bold$$', s: '$$mdi:bluetooth-connect$$'}
   - {t: '-', s: _}
   layer1:
   - F12
