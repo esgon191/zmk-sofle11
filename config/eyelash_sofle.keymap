@@ -170,11 +170,11 @@
 
         LAYER2 {
             bindings = <
-&none   &none   &none     &none   &none         &none     &none   &none           &none            &none            &none            &none   &bt BT_CLR_ALL
-&none   &none   &kp N5    &kp N6  &kp N7        &kp N8    &none   &bt BT_NXT      &rgb_ug RGB_TOG  &rgb_ug RGB_BRI  &rgb_ug RGB_BRD  &none   &bl BL_TOG
-&none   &none   &kp N1    &kp N2  &kp N3        &kp N4    &none   &msc SCRL_LEFT  &msc SCRL_DOWN   &msc SCRL_UP     &msc SCRL_RIGHT  &none   &none
-&none   &none   &kp DOWN  &kp UP  &kp LS(LEFT)  &kp M     &none   &none           &none            &none            &none            &none   &none
-&trans  &trans  &trans    &trans  &trans        &trans    &trans  &trans          &trans           &to 0            &trans           &trans
+&none   &none   &none     &none   &none         &none     &none   &none            &none            &none            &none            &none   &bt BT_CLR_ALL
+&none   &none   &kp N5    &kp N6  &kp N7        &kp N8    &none   &bt BT_NXT       &rgb_ug RGB_TOG  &rgb_ug RGB_BRI  &rgb_ug RGB_BRD  &none   &bl BL_TOG
+&none   &none   &kp N1    &kp N2  &kp N3        &kp N4    &none   &msc SCRL_RIGHT  &msc SCRL_UP     &msc SCRL_DOWN   &msc SCRL_LEFT   &none   &none
+&none   &none   &kp DOWN  &kp UP  &kp LS(LEFT)  &kp M     &none   &none            &none            &none            &none            &none   &none
+&trans  &trans  &trans    &trans  &trans        &trans    &trans  &trans           &trans           &to 0            &trans           &trans
             >;
 
             sensor-bindings = <&scroll_encoder>;
