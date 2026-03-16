@@ -161,7 +161,7 @@
 &trans      &kp CARET  &kp PIPE  &kp AMPS       &kp UNDER      &kp DLLR     &mmv MOVE_DOWN   &kp PG_UP  &kp PG_DN  &tildsl  &sprlab    &trans     &kp RBKT
 &kp CAPS    &kp EQUAL  &kp EXCL  &mt RBRC LBRC  &mt RPAR LPAR  &kp MINUS    &mmv MOVE_LEFT   &kp LEFT   &kp DOWN   &kp UP   &kp RIGHT  &kp COLON  &trans
 &trans      &kp HASH   &kp AT    &kp PRCNT      &kp STAR       &kp PLUS     &mmv MOVE_RIGHT  &kp HOME   &kp END    &trans   &trans     &kp BSLH   &trans
-&kp C_MUTE  &trans     &trans    &trans         &trans         &trans       &mkp LCLK        &trans     &trans     &to 2    &trans     &trans
+&kp C_MUTE  &trans     &trans    &kp BACKSPACE  &trans         &trans       &mkp LCLK        &trans     &trans     &trans   &trans     &trans
             >;
 
             display-name = "LAYER1";
@@ -170,11 +170,11 @@
 
         LAYER2 {
             bindings = <
-&none   &none   &none     &none   &none         &none     &none   &none       &none            &none            &none            &none   &bt BT_CLR_ALL
-&none   &none   &kp N5    &kp N6  &kp N7        &kp N8    &none   &bt BT_NXT  &rgb_ug RGB_TOG  &rgb_ug RGB_BRI  &rgb_ug RGB_BRD  &none   &bl BL_TOG
-&none   &none   &kp N1    &kp N2  &kp N3        &kp N4    &none   &none       &none            &none            &none            &none   &none
-&none   &none   &kp DOWN  &kp UP  &kp LS(LEFT)  &kp M     &none   &none       &none            &none            &none            &none   &none
-&trans  &trans  &trans    &trans  &trans        &trans    &trans  &trans      &trans           &to 0            &trans           &trans
+&none   &none   &none     &none   &none         &none     &none   &none           &none            &none            &none            &none   &bt BT_CLR_ALL
+&none   &none   &kp N5    &kp N6  &kp N7        &kp N8    &none   &bt BT_NXT      &rgb_ug RGB_TOG  &rgb_ug RGB_BRI  &rgb_ug RGB_BRD  &none   &bl BL_TOG
+&none   &none   &kp N1    &kp N2  &kp N3        &kp N4    &none   &msc SCRL_LEFT  &msc SCRL_DOWN   &msc SCRL_UP     &msc SCRL_RIGHT  &none   &none
+&none   &none   &kp DOWN  &kp UP  &kp LS(LEFT)  &kp M     &none   &none           &none            &none            &none            &none   &none
+&trans  &trans  &trans    &trans  &trans        &trans    &trans  &trans          &trans           &to 0            &trans           &trans
             >;
 
             sensor-bindings = <&scroll_encoder>;
