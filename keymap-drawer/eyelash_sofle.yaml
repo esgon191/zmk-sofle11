@@ -1,6 +1,6 @@
 layout: {zmk_keyboard: eyelash_sofle}
 layers:
-  LAYER0:
+  layer0:
   - {t: '`', s: '~'}
   - {t: '1', s: '!'}
   - {t: '2', s: '@'}
@@ -51,21 +51,21 @@ layers:
   - M
   - {t: ',', h: <, s: <}
   - {t: ., h: '>', s: '>'}
-  - {t: /, s: '?'}
+  - {t: KP DIVIDE, h: '?'}
   - $$mdi:apple-keyboard-shift$$
   - $$mdi:volume-off$$
   - $$mdi:apple-keyboard-control$$
   - $$mdi:apple-keyboard-option$$
   - $$mdi:apple-keyboard-command$$
-  - LAYER2
+  - layer2
   - $$mdi:keyboard-space$$
   - {t: '$$mdi:keyboard-return$$', type: enter}
-  - {t: '$$mdi:keyboard-return$$', type: enter}
-  - LAYER1
+  - {t: '$$mdi:keyboard-return$$', h: layer3}
+  - layer1
   - $$mdi:apple-keyboard-command$$
   - {h: '$$mdi:arrow-down-bold$$', s: '$$mdi:bluetooth-connect$$'}
   - {t: KP COMMA, h: KP DOT}
-  LAYER1:
+  layer1:
   - F12
   - F1
   - F2
@@ -86,9 +86,9 @@ layers:
   - _
   - $
   - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
-  - PG UP
-  - PG DN
-  - '&tildsl'
+  - MUTE
+  - $$mdi:volume-low$$
+  - $$mdi:volume-high$$
   - '&sprlab'
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: ']', s: '}'}
@@ -114,7 +114,7 @@ layers:
   - {t: '$$mdi:menu-right$$', s: '$$mdi:mouse$$'}
   - HOME
   - END
-  - {t: '?', h: KP SLASH}
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: \, s: '|'}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -130,7 +130,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  LAYER2:
+  layer2:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
@@ -192,10 +192,10 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: LAYER0, h: toggle}
+  - {t: layer0, h: toggle}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  '3':
+  layer3:
   - F12
   - F1
   - F2
@@ -255,7 +255,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '0', s: )}
+  - {t: '0', s: ), type: held}
   - {t: '0', s: )}
   - {t: '0', s: )}
   - {t: '$$mdi:transfer$$', type: trans}
