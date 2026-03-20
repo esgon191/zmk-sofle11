@@ -114,7 +114,7 @@ layers:
   - {t: '$$mdi:menu-right$$', s: '$$mdi:mouse$$'}
   - HOME
   - END
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '?', h: KP SLASH}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: \, s: '|'}
   - {t: '$$mdi:transfer$$', type: trans}
