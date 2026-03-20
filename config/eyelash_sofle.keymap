@@ -157,11 +157,11 @@
 
         layer1 {
             bindings = <
-&kp F12     &kp F1     &kp F2    &kp F3         &kp F4         &kp F5       &mmv MOVE_UP     &kp F6     &kp F7     &kp F8   &kp F9     &kp F10    &kp F11
-&trans      &kp CARET  &kp PIPE  &kp AMPS       &kp UNDER      &kp DLLR     &mmv MOVE_DOWN   &kp PG_UP  &kp PG_DN  &tildsl  &sprlab    &trans     &kp RBKT
-&kp CAPS    &kp EQUAL  &kp EXCL  &mt RBRC LBRC  &mt RPAR LPAR  &kp MINUS    &mmv MOVE_LEFT   &kp LEFT   &kp DOWN   &kp UP   &kp RIGHT  &kp COLON  &trans
-&trans      &kp HASH   &kp AT    &kp PRCNT      &kp STAR       &kp PLUS     &mmv MOVE_RIGHT  &kp HOME   &kp END    &trans   &trans     &kp BSLH   &trans
-&kp C_MUTE  &trans     &trans    &kp LCMD       &kp BACKSPACE  &trans       &mkp LCLK        &trans     &trans     &trans   &trans     &trans
+&kp F12     &kp F1     &kp F2    &kp F3         &kp F4         &kp F5       &mmv MOVE_UP     &kp F6     &kp F7     &kp F8                 &kp F9     &kp F10    &kp F11
+&trans      &kp CARET  &kp PIPE  &kp AMPS       &kp UNDER      &kp DLLR     &mmv MOVE_DOWN   &kp PG_UP  &kp PG_DN  &tildsl                &sprlab    &trans     &kp RBKT
+&kp CAPS    &kp EQUAL  &kp EXCL  &mt RBRC LBRC  &mt RPAR LPAR  &kp MINUS    &mmv MOVE_LEFT   &kp LEFT   &kp DOWN   &kp UP                 &kp RIGHT  &kp COLON  &trans
+&trans      &kp HASH   &kp AT    &kp PRCNT      &kp STAR       &kp PLUS     &mmv MOVE_RIGHT  &kp HOME   &kp END    &mt KP_SLASH QUESTION  &trans     &kp BSLH   &trans
+&kp C_MUTE  &trans     &trans    &kp LCMD       &kp BACKSPACE  &trans       &mkp LCLK        &trans     &trans     &trans                 &trans     &trans
             >;
 
             display-name = "LAYER1";
