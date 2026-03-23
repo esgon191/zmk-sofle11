@@ -102,6 +102,20 @@
             #binding-cells = <0>;
             bindings = <&macro_tap>, <&kp TILDE &kp FSLH>;
         };
+
+        ru_coma: ru_coma {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LC(SPACE)>;
+            label = "RU_COMA";
+        };
+
+        langchange: langchange {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LC(SPACE)>;
+            label = "LANGCHANGE";
+        };
     };
 
     behaviors {
@@ -155,11 +169,11 @@
 
         layer0 {
             bindings = <
-&kp GRAVE   &kp N1            &kp N2    &kp N3    &kp N4  &kp N5       &kp UP_ARROW     &kp N6                &kp N7  &kp N8        &kp N9      &kp N0                  &kp BSPC
-&kp ESCAPE  &kp Q             &kp W     &kp E     &kp R   &kp T        &kp DOWN_ARROW   &kp Y                 &kp U   &kp I         &kp O       &kp P                   &kp LBKT
-&kp TAB     &kp A             &kp S     &kp D     &kp F   &kp G        &kp LEFT_ARROW   &kp H                 &kp J   &kp K         &kp L       &mt COLON SEMI          &mt DQT APOS
-&kp LSHFT   &kp Z             &kp X     &kp C     &kp V   &kp B        &kp RIGHT_ARROW  &kp N                 &kp M   &mt LT COMMA  &mt GT DOT  &mt QUESTION KP_DIVIDE  &kp RSHFT
-&kp C_MUTE  &kp LEFT_CONTROL  &kp LALT  &kp LCMD  &mo 2   &kp SPACE    &kp ENTER        &layer3enter 3 ENTER  &mo 1   &kp RCMD      &bt BT_NXT  &mt KP_DOT KP_COMMA
+&kp GRAVE   &kp N1            &kp N2    &kp N3    &kp N4  &kp N5       &kp UP_ARROW     &kp N6                &kp N7  &kp N8        &kp N9       &kp N0                  &kp BSPC
+&kp ESCAPE  &kp Q             &kp W     &kp E     &kp R   &kp T        &kp DOWN_ARROW   &kp Y                 &kp U   &kp I         &kp O        &kp P                   &mt RBKT LBKT
+&kp TAB     &kp A             &kp S     &kp D     &kp F   &kp G        &kp LEFT_ARROW   &kp H                 &kp J   &kp K         &kp L        &mt COLON SEMI          &mt DQT APOS
+&kp LSHFT   &kp Z             &kp X     &kp C     &kp V   &kp B        &kp RIGHT_ARROW  &kp N                 &kp M   &mt LT COMMA  &mt GT DOT   &mt QUESTION KP_DIVIDE  &kp RSHFT
+&kp C_MUTE  &kp LEFT_CONTROL  &kp LALT  &kp LCMD  &mo 2   &kp SPACE    &kp ENTER        &layer3enter 3 ENTER  &mo 1   &kp RCMD      &langchange  &mt KP_DOT KP_COMMA
             >;
 
             display-name = "layer0";
@@ -167,11 +181,11 @@
 
         layer1 {
             bindings = <
-&kp F12     &kp F1     &kp F2    &kp F3         &kp F4         &kp F5       &mmv MOVE_UP     &kp F6      &kp F7             &kp F8           &kp F9     &kp F10    &kp F11
-&trans      &kp CARET  &kp PIPE  &kp AMPS       &kp UNDER      &kp DLLR     &mmv MOVE_DOWN   &kp K_MUTE  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &sprlab    &trans     &kp RBKT
-&kp CAPS    &kp EQUAL  &kp EXCL  &mt RBRC LBRC  &mt RPAR LPAR  &kp MINUS    &mmv MOVE_LEFT   &kp LEFT    &kp DOWN           &kp UP           &kp RIGHT  &kp COLON  &trans
-&trans      &kp HASH   &kp AT    &kp PRCNT      &kp STAR       &kp PLUS     &mmv MOVE_RIGHT  &kp HOME    &kp END            &trans           &trans     &kp BSLH   &trans
-&kp C_MUTE  &trans     &trans    &kp LCMD       &kp BACKSPACE  &trans       &mkp LCLK        &trans      &trans             &trans           &trans     &trans
+&kp F12     &kp F1     &kp F2        &kp F3         &kp F4         &kp F5       &mmv MOVE_UP     &kp F6      &kp F7             &kp F8           &kp F9     &kp F10    &kp F11
+&trans      &kp CARET  &kp PIPE      &kp AMPS       &kp UNDER      &kp DLLR     &mmv MOVE_DOWN   &kp K_MUTE  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &sprlab    &trans     &kp RBKT
+&kp CAPS    &kp EQUAL  &kp EXCL      &mt RBRC LBRC  &mt RPAR LPAR  &kp MINUS    &mmv MOVE_LEFT   &kp LEFT    &kp DOWN           &kp UP           &kp RIGHT  &kp COLON  &trans
+&trans      &kp HASH   &kp AT        &kp PRCNT      &kp STAR       &kp PLUS     &mmv MOVE_RIGHT  &kp HOME    &kp END            &trans           &trans     &kp BSLH   &trans
+&kp C_MUTE  &kp LCTRL  &kp LEFT_ALT  &kp LCMD       &kp BACKSPACE  &trans       &mkp LCLK        &trans      &trans             &trans           &trans     &trans
             >;
 
             display-name = "layer1";
