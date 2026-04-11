@@ -155,7 +155,7 @@ layers:
   - RGB TOG
   - RGB BRI
   - RGB BRD
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - RGB EFF
   - '&bl BL_TOG'
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
