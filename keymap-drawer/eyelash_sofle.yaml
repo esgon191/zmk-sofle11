@@ -89,8 +89,8 @@ layers:
   - MUTE
   - $$mdi:volume-low$$
   - $$mdi:volume-high$$
-  - '&sprlab'
-  - {t: '$$mdi:transfer$$', type: trans}
+  - Gui+Ctl+Sft+KP 4
+  - {t: \, s: '|'}
   - {t: ']', s: '}'}
   - $$mdi:apple-keyboard-caps$$
   - {t: '=', s: +}
@@ -112,10 +112,10 @@ layers:
   - '*'
   - +
   - {t: '$$mdi:menu-right$$', s: '$$mdi:mouse$$'}
-  - HOME
-  - END
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '[', h: ']', s: '{'}
+  - $$mdi:brightness-7$$
+  - $$mdi:brightness-5$$
+  - Gui+Sft+KP 5
   - {t: \, s: '|'}
   - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:volume-off$$
