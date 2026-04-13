@@ -116,7 +116,7 @@ layers:
   - $$mdi:brightness-7$$
   - $$mdi:brightness-5$$
   - Gui+Sft+KP 5
-  - {t: \, s: '|'}
+  - {t: \, h: '|', s: '|'}
   - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:volume-off$$
   - $$mdi:apple-keyboard-control$$
