@@ -89,9 +89,9 @@ layers:
   - MUTE
   - $$mdi:volume-low$$
   - $$mdi:volume-high$$
-  - Gui+Ctl+Sft+KP 4
-  - {t: \, s: '|'}
+  - {t: '[', s: '{'}
   - {t: ']', s: '}'}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - $$mdi:apple-keyboard-caps$$
   - {t: '=', s: +}
   - '!'
