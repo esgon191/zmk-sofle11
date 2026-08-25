@@ -208,7 +208,7 @@
             bindings = <
 &none   &none   &none      &none      &none      &none     &none   &none           &none            &none            &none            &none                           &bt BT_CLR_ALL
 &none   &kp N1  &kp N2     &kp N3     &kp N4     &kp N5    &none   &kp N6          &kp N7           &kp N8           &kp N9           &kp N0                          &bl BL_TOG
-&none   &none   &mkp LCLK  &mkp MCLK  &mkp RCLK  &none     &none   &mmv MOVE_LEFT  &mmv MOVE_UP     &mmv MOVE_DOWN   &mmv MOVE_RIGHT  &rgb_ug RGB_COLOR_HSB(0,0,100)  &none
+&none   &none   &mkp LCLK  &mkp MCLK  &mkp RCLK  &none     &none   &mmv MOVE_LEFT  &mmv MOVE_DOWN   &mmv MOVE_UP     &mmv MOVE_RIGHT  &rgb_ug RGB_COLOR_HSB(0,0,100)  &none
 &none   &none   &none      &none      &mo 3      &none     &none   &bt BT_NXT      &rgb_ug RGB_TOG  &rgb_ug RGB_BRI  &rgb_ug RGB_BRI  &none                           &none
 &trans  &trans  &trans     &trans     &trans     &trans    &trans  &trans          &trans           &trans           &trans           &trans
             >;
