@@ -122,7 +122,7 @@
             #binding-cells = <0>;
             bindings =
                 <&macro_press>,
-                <&mo 4>,
+                <&mo 0>,
                 <&macro_release>,
                 <&macro_press>;
 
@@ -185,7 +185,7 @@
 &kp ESCAPE  &kp Q             &kp W     &kp E     &kp R   &kp T        &kp DOWN_ARROW   &kp Y                 &kp U   &kp I         &kp O        &kp P                   &mt RBKT LBKT
 &kp TAB     &kp A             &kp S     &kp D     &kp F   &kp G        &kp LEFT_ARROW   &kp H                 &kp J   &kp K         &kp L        &mt COLON SEMI          &mt DQT APOS
 &kp LSHFT   &kp Z             &kp X     &kp C     &kp V   &kp B        &kp RIGHT_ARROW  &kp N                 &kp M   &mt LT COMMA  &mt GT DOT   &mt QUESTION KP_DIVIDE  &kp RSHFT
-&kp C_MUTE  &kp LEFT_CONTROL  &kp LALT  &kp LCMD  &mo 2   &kp SPACE    &kp ENTER        &layer3enter 3 ENTER  &mo 1   &kp RCMD      &langchange  &mt KP_DOT KP_COMMA
+&kp C_MUTE  &kp LEFT_CONTROL  &kp LALT  &kp LCMD  &mo 2   &kp SPACE    &kp ENTER        &layer3enter 0 ENTER  &mo 1   &kp RCMD      &langchange  &mt KP_DOT KP_COMMA
             >;
 
             display-name = "layer0";
@@ -206,11 +206,11 @@
 
         layer2 {
             bindings = <
-&none   &none   &none      &none      &none      &none     &none   &none            &none            &none            &none            &none                           &bt BT_CLR_ALL
-&none   &kp N1  &kp N2     &kp N3     &kp N4     &kp N5    &none   &kp N6           &kp N7           &kp N8           &kp N9           &kp N0                          &bl BL_TOG
-&none   &none   &mkp LCLK  &mkp MCLK  &mkp RCLK  &none     &none   &msc SCRL_RIGHT  &msc SCRL_UP     &msc SCRL_DOWN   &msc SCRL_LEFT   &rgb_ug RGB_COLOR_HSB(0,0,100)  &none
-&none   &none   &none      &none      &none      &none     &none   &bt BT_NXT       &rgb_ug RGB_TOG  &rgb_ug RGB_BRI  &rgb_ug RGB_BRI  &none                           &none
-&trans  &trans  &trans     &trans     &trans     &trans    &trans  &trans           &trans           &trans           &trans           &trans
+&none   &none   &none      &none      &none      &none     &none   &none           &none            &none            &none            &none                           &bt BT_CLR_ALL
+&none   &kp N1  &kp N2     &kp N3     &kp N4     &kp N5    &none   &kp N6          &kp N7           &kp N8           &kp N9           &kp N0                          &bl BL_TOG
+&none   &none   &mkp LCLK  &mkp MCLK  &mkp RCLK  &none     &none   &mmv MOVE_LEFT  &mmv MOVE_UP     &mmv MOVE_DOWN   &mmv MOVE_RIGHT  &rgb_ug RGB_COLOR_HSB(0,0,100)  &none
+&none   &none   &none      &none      &mo 3      &none     &none   &bt BT_NXT      &rgb_ug RGB_TOG  &rgb_ug RGB_BRI  &rgb_ug RGB_BRI  &none                           &none
+&trans  &trans  &trans     &trans     &trans     &trans    &trans  &trans          &trans           &trans           &trans           &trans
             >;
 
             sensor-bindings = <&scroll_encoder>;
@@ -218,21 +218,11 @@
 
         layer3 {
             bindings = <
-&kp F12  &kp F1    &kp F2        &kp F3        &kp F4        &kp F5       &none   &kp F6          &kp F7          &kp F8        &kp F9           &kp F10  &kp F11
-&none    &kp HOME  &kp N7        &kp NUMBER_8  &kp NUMBER_9  &kp PG_DN    &none   &none           &trans          &trans        &trans           &none    &none
-&none    &kp LEFT  &kp NUMBER_4  &kp N5        &kp NUMBER_6  &none        &none   &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP  &mmv MOVE_RIGHT  &none    &none
-&none    &none     &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &none        &none   &none           &trans          &trans        &trans           &none    &none
-&trans   &trans    &kp NUMBER_0  &mkp LCLK     &mkp MCLK     &mkp RCLK    &trans  &kp N0          &kp N0          &kp N0        &trans           &trans
-            >;
-        };
-
-        layer_4 {
-            bindings = <
-&kp F12      &kp F1       &kp F2           &kp F3       &kp F4     &kp F5       &none   &kp F6  &kp F7  &kp F8  &kp F9  &kp F10  &kp F11
-&bootloader  &kp F13      &kp F14          &kp HOME     &kp END    &kp PG_UP    &none   &none   &kp N7  &kp N8  &kp N9  &none    &none
-&none        &kp LA(TAB)  &kp LC(LS(TAB))  &kp LC(TAB)  &kp ENTER  &kp PG_DN    &none   &none   &kp N4  &kp N5  &kp N6  &none    &none
-&none        &none        &kp LA(F4)       &kp F5       &mkp MB4   &mkp MB5     &none   &none   &kp N1  &kp N2  &kp N3  &none    &none
-&trans       &trans       &trans           &trans       &trans     &trans       &trans  &kp N0  &kp N0  &kp N0  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans           &trans        &trans          &trans          &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans           &trans        &trans          &trans          &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &msc SCRL_RIGHT  &msc SCRL_UP  &msc SCRL_DOWN  &msc SCRL_LEFT  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans           &trans        &trans          &trans          &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans           &trans        &trans          &trans          &trans
             >;
         };
     };
